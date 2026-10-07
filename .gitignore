@@ -9,7 +9,7 @@ models/dropout_model_bundle_advanced.pkl
 
 # Node dependencies
 frontend/node_modules/
-dist/
+!frontend/dist/
 
 # System / logs
 *.log

@@ -1,0 +1,662 @@
+{
+  "champion_model": "Stacking Ensemble",
+  "class_names": [
+    "Dropout",
+    "Enrolled",
+    "Graduate"
+  ],
+  "feature_names": [
+    "Marital status",
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Previous qualification",
+    "Previous qualification (grade)",
+    "Nacionality",
+    "Mother's qualification",
+    "Father's qualification",
+    "Mother's occupation",
+    "Father's occupation",
+    "Admission grade",
+    "Displaced",
+    "Educational special needs",
+    "Debtor",
+    "Tuition fees up to date",
+    "Gender",
+    "Scholarship holder",
+    "Age at enrollment",
+    "International",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP",
+    "Academic_Success_Rate_Sem1",
+    "Academic_Success_Rate_Sem2",
+    "Total_Units_Enrolled",
+    "Total_Units_Approved",
+    "Overall_Approval_Rate",
+    "Grade_Progression",
+    "Avg_Grade_Combined",
+    "Admission_to_College_Grade_Ratio",
+    "Failed_Units_Sem1",
+    "Failed_Units_Sem2",
+    "Total_Failed_Units",
+    "Eval_Pass_Ratio_Sem1",
+    "Eval_Pass_Ratio_Sem2",
+    "Financial_Stress_Score",
+    "Macro_Economic_Stress",
+    "Mature_Student_Flag",
+    "Academic_Momentum_Index",
+    "Course_Load_Ratio",
+    "Early_Warning_Index"
+  ],
+  "top_features": [
+    {
+      "feature": "Early_Warning_Index",
+      "importance": 0.08278960513470117,
+      "lgb_importance": 0.009865196078431372,
+      "xgb_importance": 0.18006327748298645,
+      "rf_importance": 0.05844034184268569
+    },
+    {
+      "feature": "Overall_Approval_Rate",
+      "importance": 0.0684436747317556,
+      "lgb_importance": 0.021200980392156864,
+      "xgb_importance": 0.12612970173358917,
+      "rf_importance": 0.05800034206952072
+    },
+    {
+      "feature": "Academic_Momentum_Index",
+      "importance": 0.040782717397065786,
+      "lgb_importance": 0.03360906862745098,
+      "xgb_importance": 0.021352315321564674,
+      "rf_importance": 0.06738676824218169
+    },
+    {
+      "feature": "Total_Failed_Units",
+      "importance": 0.0383049992238105,
+      "lgb_importance": 0.014981617647058824,
+      "xgb_importance": 0.05904025211930275,
+      "rf_importance": 0.0408931279050699
+    },
+    {
+      "feature": "Academic_Success_Rate_Sem2",
+      "importance": 0.036350701192513456,
+      "lgb_importance": 0.01825980392156863,
+      "xgb_importance": 0.04110231623053551,
+      "rf_importance": 0.049689983425436214
+    },
+    {
+      "feature": "Eval_Pass_Ratio_Sem2",
+      "importance": 0.03604225846182715,
+      "lgb_importance": 0.04071691176470588,
+      "xgb_importance": 0.022492216899991035,
+      "rf_importance": 0.04491764672078453
+    },
+    {
+      "feature": "Previous qualification (grade)",
+      "importance": 0.03188345788926335,
+      "lgb_importance": 0.06017156862745098,
+      "xgb_importance": 0.008830099366605282,
+      "rf_importance": 0.026648705673733775
+    },
+    {
+      "feature": "Admission grade",
+      "importance": 0.03150472727976762,
+      "lgb_importance": 0.060294117647058824,
+      "xgb_importance": 0.008801008574664593,
+      "rf_importance": 0.025419055617579442
+    },
+    {
+      "feature": "Age at enrollment",
+      "importance": 0.027023716974026016,
+      "lgb_importance": 0.04543504901960784,
+      "xgb_importance": 0.0121654337272048,
+      "rf_importance": 0.02347066817526541
+    },
+    {
+      "feature": "Course",
+      "importance": 0.024580603647489752,
+      "lgb_importance": 0.03909313725490196,
+      "xgb_importance": 0.01217600516974926,
+      "rf_importance": 0.022472668517818047
+    },
+    {
+      "feature": "Failed_Units_Sem2",
+      "importance": 0.024511219120316657,
+      "lgb_importance": 0.007261029411764706,
+      "xgb_importance": 0.03459126502275467,
+      "rf_importance": 0.0316813629264306
+    },
+    {
+      "feature": "Eval_Pass_Ratio_Sem1",
+      "importance": 0.02364535879301848,
+      "lgb_importance": 0.03406862745098039,
+      "xgb_importance": 0.01126509252935648,
+      "rf_importance": 0.02560235639871857
+    },
+    {
+      "feature": "Admission_to_College_Grade_Ratio",
+      "importance": 0.022619921916127158,
+      "lgb_importance": 0.033884803921568625,
+      "xgb_importance": 0.008434281684458256,
+      "rf_importance": 0.02554068014235459
+    },
+    {
+      "feature": "Unemployment rate",
+      "importance": 0.022117641393423388,
+      "lgb_importance": 0.037316176470588235,
+      "xgb_importance": 0.009455938823521137,
+      "rf_importance": 0.019580808886160803
+    },
+    {
+      "feature": "Financial_Stress_Score",
+      "importance": 0.022041883743234323,
+      "lgb_importance": 0.020526960784313725,
+      "xgb_importance": 0.02114935591816902,
+      "rf_importance": 0.02444933452722023
+    },
+    {
+      "feature": "GDP",
+      "importance": 0.021227734822473022,
+      "lgb_importance": 0.033915441176470586,
+      "xgb_importance": 0.009919577278196812,
+      "rf_importance": 0.01984818601275168
+    },
+    {
+      "feature": "Tuition fees up to date",
+      "importance": 0.020421196512771397,
+      "lgb_importance": 0.005943627450980392,
+      "xgb_importance": 0.03905323147773743,
+      "rf_importance": 0.016266730609596377
+    },
+    {
+      "feature": "Curricular units 2nd sem (grade)",
+      "importance": 0.02006485998028712,
+      "lgb_importance": 0.024785539215686273,
+      "xgb_importance": 0.007445403840392828,
+      "rf_importance": 0.027963636884782258
+    },
+    {
+      "feature": "Avg_Grade_Combined",
+      "importance": 0.019793917887728708,
+      "lgb_importance": 0.02426470588235294,
+      "xgb_importance": 0.008613703772425652,
+      "rf_importance": 0.026503344008407533
+    },
+    {
+      "feature": "Curricular units 2nd sem (evaluations)",
+      "importance": 0.019138850172189765,
+      "lgb_importance": 0.029105392156862746,
+      "xgb_importance": 0.010837134905159473,
+      "rf_importance": 0.017474023454547072
+    }
+  ],
+  "models": {
+    "XGBoost": {
+      "name": "XGBoost",
+      "accuracy": 91.57,
+      "balanced_accuracy": 91.18,
+      "precision_macro": 91.7,
+      "recall_macro": 91.18,
+      "f1_macro": 91.36,
+      "f1_weighted": 91.55,
+      "roc_auc": 98.35,
+      "cohen_kappa": 0.8723,
+      "cv_f1_mean": 91.2,
+      "cv_f1_std": 0.82,
+      "confusion_matrix": [
+        [
+          881,
+          49,
+          59
+        ],
+        [
+          37,
+          762,
+          65
+        ],
+        [
+          5,
+          38,
+          1104
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9544962080173348,
+          "recall": 0.890798786653185,
+          "f1-score": 0.9215481171548117,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.8975265017667845,
+          "recall": 0.8819444444444444,
+          "f1-score": 0.8896672504378283,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.8990228013029316,
+          "recall": 0.962510897994769,
+          "f1-score": 0.9296842105263158,
+          "support": 1147.0
+        },
+        "accuracy": 0.9156666666666666,
+        "macro avg": {
+          "precision": 0.9170151703623503,
+          "recall": 0.9117513763641328,
+          "f1-score": 0.9136331927063187,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.9168796001167028,
+          "recall": 0.9156666666666666,
+          "f1-score": 0.9154771272393588,
+          "support": 3000.0
+        }
+      }
+    },
+    "LightGBM": {
+      "name": "LightGBM",
+      "accuracy": 94.07,
+      "balanced_accuracy": 93.85,
+      "precision_macro": 94.14,
+      "recall_macro": 93.85,
+      "f1_macro": 93.96,
+      "f1_weighted": 94.06,
+      "roc_auc": 99.08,
+      "cohen_kappa": 0.9103,
+      "cv_f1_mean": 93.83,
+      "cv_f1_std": 0.56,
+      "confusion_matrix": [
+        [
+          907,
+          32,
+          50
+        ],
+        [
+          28,
+          801,
+          35
+        ],
+        [
+          4,
+          29,
+          1114
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9659211927582535,
+          "recall": 0.917087967644085,
+          "f1-score": 0.9408713692946058,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.9292343387470998,
+          "recall": 0.9270833333333334,
+          "f1-score": 0.9281575898030128,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.9291075896580484,
+          "recall": 0.9712292938099389,
+          "f1-score": 0.9497016197783461,
+          "support": 1147.0
+        },
+        "accuracy": 0.9406666666666667,
+        "macro avg": {
+          "precision": 0.9414210403878006,
+          "recall": 0.9384668649291191,
+          "f1-score": 0.9395768596253214,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.9412803112177295,
+          "recall": 0.9406666666666667,
+          "f1-score": 0.9405858999026437,
+          "support": 3000.0
+        }
+      }
+    },
+    "Random Forest": {
+      "name": "Random Forest",
+      "accuracy": 94.37,
+      "balanced_accuracy": 94.24,
+      "precision_macro": 94.47,
+      "recall_macro": 94.24,
+      "f1_macro": 94.31,
+      "f1_weighted": 94.37,
+      "roc_auc": 99.32,
+      "cohen_kappa": 0.9149,
+      "cv_f1_mean": 93.26,
+      "cv_f1_std": 0.76,
+      "confusion_matrix": [
+        [
+          909,
+          27,
+          53
+        ],
+        [
+          19,
+          814,
+          31
+        ],
+        [
+          3,
+          36,
+          1108
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9763694951664876,
+          "recall": 0.9191102123356926,
+          "f1-score": 0.946875,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.928164196123147,
+          "recall": 0.9421296296296297,
+          "f1-score": 0.9350947731188972,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.9295302013422819,
+          "recall": 0.9659982563208369,
+          "f1-score": 0.9474134245404019,
+          "support": 1147.0
+        },
+        "accuracy": 0.9436666666666667,
+        "macro avg": {
+          "precision": 0.9446879642106388,
+          "recall": 0.9424126994287197,
+          "f1-score": 0.9431277325530997,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.9445781457032174,
+          "recall": 0.9436666666666667,
+          "f1-score": 0.9436881523075226,
+          "support": 3000.0
+        }
+      }
+    },
+    "Extra Trees": {
+      "name": "Extra Trees",
+      "accuracy": 94.73,
+      "balanced_accuracy": 94.64,
+      "precision_macro": 94.92,
+      "recall_macro": 94.64,
+      "f1_macro": 94.72,
+      "f1_weighted": 94.75,
+      "roc_auc": 99.35,
+      "cohen_kappa": 0.9204,
+      "cv_f1_mean": 93.87,
+      "cv_f1_std": 0.68,
+      "confusion_matrix": [
+        [
+          912,
+          28,
+          49
+        ],
+        [
+          4,
+          821,
+          39
+        ],
+        [
+          1,
+          37,
+          1109
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9945474372955289,
+          "recall": 0.9221435793731041,
+          "f1-score": 0.9569779643231899,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.9266365688487584,
+          "recall": 0.9502314814814815,
+          "f1-score": 0.9382857142857143,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.9264828738512949,
+          "recall": 0.966870095902354,
+          "f1-score": 0.9462457337883959,
+          "support": 1147.0
+        },
+        "accuracy": 0.9473333333333334,
+        "macro avg": {
+          "precision": 0.9492222933318608,
+          "recall": 0.9464150522523133,
+          "f1-score": 0.9471698041324333,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.9489657557593468,
+          "recall": 0.9473333333333334,
+          "f1-score": 0.9474913068379274,
+          "support": 3000.0
+        }
+      }
+    },
+    "MLP Neural Net": {
+      "name": "MLP Neural Net",
+      "accuracy": 96.7,
+      "balanced_accuracy": 96.74,
+      "precision_macro": 96.64,
+      "recall_macro": 96.74,
+      "f1_macro": 96.69,
+      "f1_weighted": 96.7,
+      "roc_auc": 99.17,
+      "cohen_kappa": 0.9502,
+      "cv_f1_mean": 95.57,
+      "cv_f1_std": 0.6,
+      "confusion_matrix": [
+        [
+          957,
+          6,
+          26
+        ],
+        [
+          16,
+          839,
+          9
+        ],
+        [
+          8,
+          34,
+          1105
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9755351681957186,
+          "recall": 0.967644084934277,
+          "f1-score": 0.9715736040609138,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.9544937428896473,
+          "recall": 0.9710648148148148,
+          "f1-score": 0.9627079747561675,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.9692982456140351,
+          "recall": 0.963382737576286,
+          "f1-score": 0.9663314385658067,
+          "support": 1147.0
+        },
+        "accuracy": 0.967,
+        "macro avg": {
+          "precision": 0.966442385566467,
+          "recall": 0.9673638791084592,
+          "f1-score": 0.966871005794296,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.967090654307173,
+          "recall": 0.967,
+          "f1-score": 0.9670160482135176,
+          "support": 3000.0
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "name": "Gradient Boosting",
+      "accuracy": 88.77,
+      "balanced_accuracy": 88.36,
+      "precision_macro": 88.89,
+      "recall_macro": 88.36,
+      "f1_macro": 88.53,
+      "f1_weighted": 88.77,
+      "roc_auc": 97.34,
+      "cohen_kappa": 0.83,
+      "cv_f1_mean": 88.39,
+      "cv_f1_std": 0.74,
+      "confusion_matrix": [
+        [
+          857,
+          61,
+          71
+        ],
+        [
+          44,
+          734,
+          86
+        ],
+        [
+          8,
+          67,
+          1072
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.9427942794279428,
+          "recall": 0.8665318503538928,
+          "f1-score": 0.9030558482613277,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.851508120649652,
+          "recall": 0.8495370370370371,
+          "f1-score": 0.8505214368482039,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.8722538649308381,
+          "recall": 0.934612031386225,
+          "f1-score": 0.9023569023569024,
+          "support": 1147.0
+        },
+        "accuracy": 0.8876666666666667,
+        "macro avg": {
+          "precision": 0.8888520883361443,
+          "recall": 0.8835603062590517,
+          "f1-score": 0.8853113958221446,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.889533913890402,
+          "recall": 0.8876666666666667,
+          "f1-score": 0.8876587074568895,
+          "support": 3000.0
+        }
+      }
+    },
+    "Stacking Ensemble": {
+      "name": "Stacking Ensemble",
+      "accuracy": 97.97,
+      "balanced_accuracy": 97.95,
+      "precision_macro": 98.02,
+      "recall_macro": 97.95,
+      "f1_macro": 97.99,
+      "f1_weighted": 97.97,
+      "roc_auc": 99.76,
+      "cohen_kappa": 0.9693,
+      "cv_f1_mean": 97.99,
+      "cv_f1_std": 0.45,
+      "confusion_matrix": [
+        [
+          965,
+          1,
+          23
+        ],
+        [
+          5,
+          847,
+          12
+        ],
+        [
+          2,
+          18,
+          1127
+        ]
+      ],
+      "classification_report": {
+        "Dropout": {
+          "precision": 0.992798353909465,
+          "recall": 0.9757330637007078,
+          "f1-score": 0.98419173890872,
+          "support": 989.0
+        },
+        "Enrolled": {
+          "precision": 0.9780600461893765,
+          "recall": 0.9803240740740741,
+          "f1-score": 0.9791907514450867,
+          "support": 864.0
+        },
+        "Graduate": {
+          "precision": 0.9698795180722891,
+          "recall": 0.9825632083696599,
+          "f1-score": 0.9761801645734084,
+          "support": 1147.0
+        },
+        "accuracy": 0.9796666666666667,
+        "macro avg": {
+          "precision": 0.9802459727237102,
+          "recall": 0.9795401153814806,
+          "f1-score": 0.9798542183090717,
+          "support": 3000.0
+        },
+        "weighted avg": {
+          "precision": 0.9797910863843327,
+          "recall": 0.9796666666666667,
+          "f1-score": 0.9796883625983261,
+          "support": 3000.0
+        }
+      }
+    }
+  },
+  "dataset_stats": {
+    "total_records": 14999,
+    "uci_records": 4424,
+    "num_features": 55,
+    "engineered_features_count": 18,
+    "class_distribution": {
+      "Graduate": 5734,
+      "Dropout": 4946,
+      "Enrolled": 4319
+    }
+  },
+  "timestamp": "2026-09-24T19:52:50.072044"
+}

@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Big uncompressed raw bundles (>100MB for GitHub)
+dropout_model_bundle.pkl
+models/dropout_model_bundle_advanced.pkl
+
+# Node dependencies
+frontend/node_modules/
+dist/
+
+# System / logs
+*.log
+.DS_Store
+Thumbs.db

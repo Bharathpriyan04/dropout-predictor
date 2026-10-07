@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+frontend/node_modules
+models/test_compressed.pkl.gz
+dropout_model_bundle.pkl
+models/dropout_model_bundle_advanced.pkl

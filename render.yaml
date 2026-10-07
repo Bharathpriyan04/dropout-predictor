@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: aegis-student-retention
+    runtime: docker
+    plan: standard
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8000
